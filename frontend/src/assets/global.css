@@ -1,0 +1,135 @@
+/* global.css */
+
+/* Background styling */
+body {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reusable UI fields */
+input, select, textarea, button {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Button styles */
+button {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563eb;
+  transform: scale(1.02);
+}
+
+/* Card styling */
+.card {
+  background: linear-gradient(to bottom right, #ffffff, #f3f4f6);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard count text */
+.dashboard-count {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Icons (e.g. FontAwesome or Lucide) */
+.icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #3b82f6;
+}
+
+/* DataTable styling */
+.table-container {
+  overflow-x: auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .dashboard-count {
+    font-size: 1.5rem;
+  }
+}
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: #f3f4f6;
+}
